@@ -1,0 +1,14 @@
+.tab-content
+  .tab-pane.active id="lA"
+     h1 大赛的
+     table.table.table-hover
+       tr
+         - table_members_title.each do | title |
+           th = title
+       - Member.all.each do | member |
+         tr
+           td = member.website
+           td = member.username
+           td = member.portkey
+           td = member.email
+           td = member.url
