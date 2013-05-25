@@ -16,8 +16,8 @@ zh_CN:
         username: '<i class="icon-user">请填写站点用户名(20个字之内)</i>'
         portkey:  "<i class='icon-lock'>请填写站密码(20个字之内)</i>"
         room:     "<i class='icon-home'>请选择站点归属</i>"
-        email:    "<i class='icon-envelope'>请填写站点注册邮箱(20个字之内)</i>"
-        url:      "<i class='icon-globe'>请填写站点链接(５0个字之内)</i>"
+        email:    "<i class='icon-envelope'>请填写站点注册邮箱(30个字之内)</i>"
+        url:      "<i class='icon-globe'>请填写站点链接(50个字之内)</i>"
       room:
         name: "<i class='icon-tag'>请填写房间名(10个字之内)</i>"
   helpers:

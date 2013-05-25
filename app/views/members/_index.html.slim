@@ -1,14 +1,23 @@
 .tab-content
-  .tab-pane.active id="lA"
-     h1 大赛的
-     table.table.table-hover
-       tr
-         - table_members_title.each do | title |
-           th = title
-       - Member.all.each do | member |
-         tr
-           td = member.website
-           td = member.username
-           td = member.portkey
-           td = member.email
-           td = member.url
+  - if Member.all.blank?
+    = render "common/no_member"
+  - else
+    - Room.all.each do | room |
+      - if room.members.blank?
+        = render "common/no_member"
+      - else
+        .tab-pane.active id="#{room.name}"
+           h1 = room.name
+           table.table.table-hover
+             tr
+               - table_members_title.each do | title |
+                 th = title
+             - room.members.each do | member |
+               tr
+                 td 
+                   a href="#{member.url}"
+                     span.label.label-success target="_blank" = member.website
+                 td = member.username
+                 td = member.portkey
+                 td = member.email
+                 td = member.url

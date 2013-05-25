@@ -3,7 +3,7 @@
     button type="button" class="close" data-dismiss="modal" aria-hidden="true" ×
     h3.new_member id="myModalLabel" 
       i.icon-heart 新建站点
-  = simple_form_for Member.new ,defaults: {label: false ,required: "required"}do |f|
+  = simple_form_for Member.new ,defaults: {label: false ,required: "required"} do |f|
     .modal-body
       = f.input :website 
       = f.input :username

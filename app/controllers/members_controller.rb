@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 class MembersController < ApplicationController
-  def index
-  end
 
   def create
     member = Member.new params[:member]
