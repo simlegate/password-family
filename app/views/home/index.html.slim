@@ -1,0 +1,15 @@
+.span9.members
+  section#parlour
+    .page-header
+      h1 密家客厅
+    table.table.table-hover
+      tr
+        - table_members_title.each do | title |
+          th = title
+      - Member.all.each do | member |
+        tr
+          td = member.website
+          td = member.username
+          td = member.portkey
+          td = member.email
+          td = member.url

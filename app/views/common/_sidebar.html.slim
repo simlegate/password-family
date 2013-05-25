@@ -1,0 +1,6 @@
+ul.nav.nav-list.sidenav.affix.span3
+  - Room.all.each do | room |
+    li
+      a href="##{room.name}"
+        i.icon-chevron-right 
+        span = room.name
