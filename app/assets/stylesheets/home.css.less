@@ -1,5 +1,62 @@
 @import "function.css.less" ;
+//产品导航条
+ul.pull-right{
+    li{
+	margin-right: 10px;
+	a {
+	    color: #fff;
+	    &:hover{text-decoration: none;}
+	}
+    }
+}
+.jumbotron{
+    background-color: #486682;
+    .carousel{
+	margin-bottom: 0px;
+    }    
+   .span5{
+       color:#E6FF00;
+       padding: 25px 0px 0px 59px;
+       h2{padding-bottom: 60px;}
+       a{margin: 64px 0 0 90px;}
+   }
+   .span7{
+       img{width:100%;
+	  hight:398px;}
+       a{line-height: 40px;}
+   }
+}
+// 产品中间
+.container{
+   hr{clear: both;}
+  .inner{
+      margin: 60px 0 50px 0;
+      text-align: center;
 
+      .con_inner{
+	  margin-left: 40%;
+	  text-align: left;
+      }
+  
+  }
+  .marketing{
+      .row{
+	  margin-left: 10%;
+	  .span4{
+	      margin-right: 80px;
+	      margin-bottom: 20px;
+	  }
+      }
+  }
+  
+}
+
+
+
+
+
+
+//登录后导航条
 ul.sidenav{
     margin: 30px 0 0;
     padding: 0;
@@ -18,3 +75,20 @@ ul.sidenav{
     }
 }
 
+//foo
+footer{
+    background-color: #eceef1;
+    .inner{
+	width: 80%;
+	padding: 60px;
+	margin: 0 auto;
+	span{float: left;}
+	ul{
+	    list-style: none;
+	    li{
+		float: right;
+		margin-right: 70px;
+	    }	    
+	}
+    }    
+}
