@@ -1,0 +1,22 @@
+.jumbotron.masthead
+  .container-fluid
+    .row-fluid 
+      = render "masthead"
+      #myCarousel.carousel.slide.span7
+        = render "carousel"
+.container
+  .container
+    .inner.span12
+      h1 因为在专注，所以适用，是的，这就是PasswordFamily
+      h3 适用于任何场景，适用于每一个人
+      .con_inner.span3  
+        ul
+          li 网站帐号太多，记不住？
+          li 移动App帐号太多，记不住？
+          li 帐号不能同步？
+        h3
+          a.btn.btn-warning.btn-large href="#" 
+            i.icon-circle-arrow-right
+            span &nbsp;立即试用体验
+    hr.soften
+    = render "marketing"

@@ -7,7 +7,7 @@
         = render "common/no_member"
       - else
         .tab-pane.active id="#{room.name}"
-           h1 = room.name
+           h3 = room.name
            table.table.table-hover
              tr
                - table_members_title.each do | title |

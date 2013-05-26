@@ -1,0 +1,35 @@
+doctype 5
+html
+  head
+    meta charset="UTF-8"
+    meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"
+    title 密码家庭
+    link rel="shortcut icon" href="assets/lock.ico"
+    meta name="author" content="Byronlee，and you!"
+    script type="text/javascript" src="http://js.tongji.linezing.com/3213963/tongji.js"
+    = stylesheet_link_tag  :application , :recursive => true
+    = javascript_include_tag :application , :recursive => true
+    = csrf_meta_tags
+  body style="padding-top: 42px;"
+    .navbar-inverse.navbar.navbar-fixed-top
+      .navbar-inner
+        .container
+          ul.nav
+            li.active
+              a.brand 首页
+            li
+              a href="#about" data-toggle="modal" 关于
+            li
+              a#feedback 反馈
+          ul.nav.pull-right
+            li
+               button.btn.btn-primary 
+                 a href="#" 登录
+            li.divider-vertica
+            li
+               button.btn.btn-info
+                 a href="#" 注册
+            a.brand href="#" 密码家庭
+
+    = yield
+    = render "foo/footer"  
