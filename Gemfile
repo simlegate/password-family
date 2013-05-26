@@ -11,7 +11,7 @@ gem 'rocket_pants', '1.6.1'
 gem "settingslogic"
 gem 'simple_form'
 gem 'cells'
-
+gem 'apotomo'
 
 gem 'will_paginate', '~> 3.0'
 gem 'will_paginate-bootstrap'
@@ -45,5 +45,3 @@ end
 group :development do
   gem "debugger"
 end
-
-
