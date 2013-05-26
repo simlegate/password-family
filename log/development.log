@@ -31143,3 +31143,470 @@ Served asset /rooms.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-25 23:46:51 +0000
 Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-26 15:57:13 +0800
+Processing by HomeController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6838ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=password_family_development collection=rooms selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.5364ms)
+  Rendered rooms/_index.html.slim (33.0ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=password_family_development command={:count=>"members", :query=>{}} (0.5403ms)
+  Rendered common/_no_member.html.slim (5.6ms)
+  Rendered members/_index.html.slim (32.5ms)
+  Rendered home/index.html.slim within layouts/application (139.1ms)
+Compiled jquery.js  (3ms)  (pid 2882)
+Compiled jquery_ujs.js  (0ms)  (pid 2882)
+Compiled twitter/bootstrap/bootstrap-transition.js  (0ms)  (pid 2882)
+Compiled twitter/bootstrap/bootstrap-alert.js  (0ms)  (pid 2882)
+Compiled twitter/bootstrap/bootstrap-modal.js  (0ms)  (pid 2882)
+Compiled twitter/bootstrap/bootstrap-dropdown.js  (0ms)  (pid 2882)
+Compiled twitter/bootstrap/bootstrap-scrollspy.js  (0ms)  (pid 2882)
+Compiled twitter/bootstrap/bootstrap-tab.js  (0ms)  (pid 2882)
+Compiled twitter/bootstrap/bootstrap-tooltip.js  (0ms)  (pid 2882)
+Compiled twitter/bootstrap/bootstrap-popover.js  (0ms)  (pid 2882)
+Compiled twitter/bootstrap/bootstrap-button.js  (0ms)  (pid 2882)
+Compiled twitter/bootstrap/bootstrap-collapse.js  (0ms)  (pid 2882)
+Compiled twitter/bootstrap/bootstrap-carousel.js  (0ms)  (pid 2882)
+Compiled twitter/bootstrap/bootstrap-typeahead.js  (0ms)  (pid 2882)
+Compiled twitter/bootstrap/bootstrap-affix.js  (0ms)  (pid 2882)
+Compiled twitter/bootstrap.js  (257ms)  (pid 2882)
+Compiled application.js  (478ms)  (pid 2882)
+  Rendered app/cells/user/navbar.html.slim (3.7ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=password_family_development collection=rooms selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.4106ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=password_family_development collection=rooms selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2344ms)
+  Rendered app/cells/member/new.html.slim (214.6ms)
+  Rendered app/cells/room/new.html.slim (11.2ms)
+  Rendered common/_footer.html.slim (2.6ms)
+Completed 200 OK in 1262ms (Views: 1261.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-26 15:57:15 +0800
+Served asset /application.css - 200 OK (17ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-05-26 15:57:15 +0800
+Served asset /bootstrap_and_overrides.css - 200 OK (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-26 15:57:15 +0800
+Served asset /jquery.js - 200 OK (4ms)
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2013-05-26 15:57:15 +0800
+Served asset /rooms.css - 200 OK (2ms)
+
+
+Started GET "/assets/member.css?body=1" for 127.0.0.1 at 2013-05-26 15:57:15 +0800
+Served asset /member.css - 200 OK (2ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-05-26 15:57:15 +0800
+Served asset /home.css - 200 OK (10ms)
+
+
+Started GET "/assets/function.css?body=1" for 127.0.0.1 at 2013-05-26 15:57:15 +0800
+Served asset /function.css - 200 OK (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-26 15:57:15 +0800
+Served asset /jquery_ujs.js - 200 OK (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-05-26 15:57:15 +0800
+Served asset /twitter/bootstrap/bootstrap-alert.js - 200 OK (11ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-05-26 15:57:15 +0800
+Served asset /twitter/bootstrap/bootstrap-transition.js - 200 OK (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-05-26 15:57:15 +0800
+Served asset /twitter/bootstrap/bootstrap-modal.js - 200 OK (86ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-05-26 15:57:15 +0800
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 200 OK (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-05-26 15:57:15 +0800
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-05-26 15:57:15 +0800
+Served asset /twitter/bootstrap/bootstrap-tab.js - 200 OK (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-05-26 15:57:15 +0800
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 200 OK (8ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-05-26 15:57:15 +0800
+Served asset /twitter/bootstrap/bootstrap-popover.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-05-26 15:57:15 +0800
+Served asset /twitter/bootstrap/bootstrap-button.js - 200 OK (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-05-26 15:57:15 +0800
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-05-26 15:57:15 +0800
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 200 OK (6ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-05-26 15:57:15 +0800
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-05-26 15:57:15 +0800
+Served asset /twitter/bootstrap/bootstrap-affix.js - 200 OK (4ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-05-26 15:57:15 +0800
+Served asset /twitter/bootstrap.js - 200 OK (11ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-05-26 15:57:15 +0800
+Served asset /bootstrap.js - 200 OK (4ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-05-26 15:57:15 +0800
+Served asset /home.js - 200 OK (1ms)
+
+
+Started GET "/assets/member.js?body=1" for 127.0.0.1 at 2013-05-26 15:57:15 +0800
+Served asset /member.js - 200 OK (2ms)
+
+
+Started GET "/assets/rooms.js?body=1" for 127.0.0.1 at 2013-05-26 15:57:15 +0800
+Served asset /rooms.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-26 15:57:15 +0800
+Served asset /application.js - 200 OK (72ms)
+
+
+Started GET "/assets/fontawesome-webfont.woff?v=3.0.2" for 127.0.0.1 at 2013-05-26 15:57:16 +0800
+Served asset /fontawesome-webfont.woff - 200 OK (15ms)
+
+
+Started POST "/rooms" for 127.0.0.1 at 2013-05-26 15:58:35 +0800
+Processing by RoomsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PCX1NqPMlFkScFywbIdkOFNzw5p2Gj5fo2KnfuO0lc4=", "room"=>{"name"=>"社交网络", "user"=>"123456"}, "commit"=>"确定"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.7155ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=password_family_development collection=users selector={"$query"=>{"_id"=>"123456"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.2103ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=password_family_development collection=rooms selector={"name"=>"社交网络"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.3796ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=password_family_development collection=rooms documents=[{"_id"=>"51a1c0abb23dc7c92c000001", "name"=>"社交网络"}] flags=[] (0.2129ms)
+Redirected to http://localhost:3000/
+Completed 302 Found in 27ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-26 15:58:35 +0800
+Processing by HomeController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=password_family_development collection=rooms selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (2070.1299ms)
+  Rendered rooms/_index.html.slim (2071.2ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=password_family_development command={:count=>"members", :query=>{}} (0.8409ms)
+  Rendered common/_no_member.html.slim (0.0ms)
+  Rendered members/_index.html.slim (2.4ms)
+  Rendered home/index.html.slim within layouts/application (2075.2ms)
+  Rendered app/cells/user/navbar.html.slim (0.0ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=password_family_development collection=rooms selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.5040ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=password_family_development collection=rooms selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2639ms)
+  Rendered app/cells/member/new.html.slim (8.2ms)
+  Rendered app/cells/room/new.html.slim (2.6ms)
+  Rendered common/_footer.html.slim (0.0ms)
+Completed 200 OK in 2194ms (Views: 2194.2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-05-26 15:58:37 +0800
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-05-26 15:58:37 +0800
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-05-26 15:58:37 +0800
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-05-26 15:58:37 +0800
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-05-26 15:58:37 +0800
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-05-26 15:58:37 +0800
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-05-26 15:58:37 +0800
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-05-26 15:58:37 +0800
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-05-26 15:58:37 +0800
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-05-26 15:58:37 +0800
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-05-26 15:58:37 +0800
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-05-26 15:58:37 +0800
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-05-26 15:58:37 +0800
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-05-26 15:58:37 +0800
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started POST "/members" for 127.0.0.1 at 2013-05-26 15:59:22 +0800
+Processing by MembersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PCX1NqPMlFkScFywbIdkOFNzw5p2Gj5fo2KnfuO0lc4=", "member"=>{"website"=>"百度", "username"=>"simle", "portkey"=>"123456", "room_id"=>"51a1c0abb23dc7c92c000001", "email"=>"12@1.com", "url"=>"http://www.baidu.com"}, "commit"=>"确定"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.5102ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=password_family_development collection=members documents=[{"_id"=>"51a1c0dab23dc7c8fb000002", "website"=>"百度", "username"=>"simle", "portkey"=>"123456", "room_id"=>"51a1c0abb23dc7c92c000001", "email"=>"12@1.com", "url"=>"http://www.baidu.com"}] flags=[] (0.1063ms)
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-26 15:59:22 +0800
+Processing by HomeController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=password_family_development collection=rooms selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.5496ms)
+  Rendered rooms/_index.html.slim (1.7ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=password_family_development command={:count=>"members", :query=>{}} (0.3674ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=password_family_development collection=rooms selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3309ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=password_family_development command={:count=>"members", :query=>{"room_id"=>"51a1c0abb23dc7c92c000001"}} (0.3893ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=password_family_development collection=members selector={"room_id"=>"51a1c0abb23dc7c92c000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.4199ms)
+  Rendered members/_index.html.slim (3.4ms)
+  Rendered home/index.html.slim within layouts/application (6.6ms)
+  Rendered app/cells/user/navbar.html.slim (0.0ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=password_family_development collection=rooms selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.5393ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=password_family_development collection=rooms selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2341ms)
+  Rendered app/cells/member/new.html.slim (8.5ms)
+  Rendered app/cells/room/new.html.slim (2.7ms)
+  Rendered common/_footer.html.slim (0.0ms)
+Completed 200 OK in 119ms (Views: 118.8ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-05-26 15:59:23 +0800
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-05-26 15:59:23 +0800
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-05-26 15:59:23 +0800
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-05-26 15:59:23 +0800
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-05-26 15:59:23 +0800
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-05-26 15:59:23 +0800
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-05-26 15:59:23 +0800
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-05-26 15:59:23 +0800
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-05-26 15:59:23 +0800
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-05-26 15:59:23 +0800
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-05-26 15:59:23 +0800
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-05-26 15:59:23 +0800
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-05-26 15:59:23 +0800
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-05-26 15:59:23 +0800
+Served asset /twitter/bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-26 15:59:23 +0800
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-26 16:06:55 +0800
+Processing by HomeController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (45.6851ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=password_family_development collection=rooms selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.4535ms)
+  Rendered rooms/_index.html.slim (69.3ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=password_family_development command={:count=>"members", :query=>{}} (0.5050ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=password_family_development collection=rooms selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3924ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=password_family_development command={:count=>"members", :query=>{"room_id"=>"51a1c0abb23dc7c92c000001"}} (0.4189ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=password_family_development collection=members selector={"room_id"=>"51a1c0abb23dc7c92c000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3278ms)
+  Rendered members/_index.html.slim (26.2ms)
+  Rendered home/index.html.slim within layouts/application (152.7ms)
+  Rendered app/cells/user/navbar.html.slim (3.6ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=password_family_development collection=rooms selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.4988ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=password_family_development collection=rooms selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2825ms)
+  Rendered app/cells/member/new.html.slim (80.3ms)
+  Rendered app/cells/room/new.html.slim (8.6ms)
+  Rendered common/_footer.html.slim (1.4ms)
+Completed 200 OK in 395ms (Views: 394.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-26 16:07:41 +0800
+Processing by HomeController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.1172ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=password_family_development collection=rooms selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.4549ms)
+  Rendered rooms/_index.html.slim (3.4ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=password_family_development command={:count=>"members", :query=>{}} (0.3431ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=password_family_development collection=rooms selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.1993ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=password_family_development command={:count=>"members", :query=>{"room_id"=>"51a1c0abb23dc7c92c000001"}} (0.2477ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=password_family_development collection=members selector={"room_id"=>"51a1c0abb23dc7c92c000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.1884ms)
+  Rendered members/_index.html.slim (2.8ms)
+  Rendered home/index.html.slim within layouts/application (8.0ms)
+  Rendered app/cells/user/navbar.html.slim (0.0ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=password_family_development collection=rooms selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.5116ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=password_family_development collection=rooms selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3176ms)
+  Rendered app/cells/member/new.html.slim (12.1ms)
+  Rendered app/cells/room/new.html.slim (3.7ms)
+  Rendered common/_footer.html.slim (0.0ms)
+Completed 200 OK in 132ms (Views: 131.8ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-05-26 16:07:41 +0800
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-05-26 16:07:41 +0800
+Served asset /home.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-26 16:07:41 +0800
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/function.css?body=1" for 127.0.0.1 at 2013-05-26 16:07:41 +0800
+Served asset /function.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/member.css?body=1" for 127.0.0.1 at 2013-05-26 16:07:41 +0800
+Served asset /member.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-26 16:07:41 +0800
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2013-05-26 16:07:41 +0800
+Served asset /rooms.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-26 16:07:41 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-05-26 16:07:41 +0800
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-05-26 16:07:41 +0800
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (59ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-05-26 16:07:41 +0800
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-05-26 16:07:41 +0800
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-05-26 16:07:41 +0800
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-05-26 16:07:41 +0800
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-05-26 16:07:41 +0800
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-05-26 16:07:41 +0800
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-05-26 16:07:41 +0800
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-05-26 16:07:41 +0800
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-05-26 16:07:41 +0800
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-05-26 16:07:41 +0800
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-05-26 16:07:41 +0800
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-05-26 16:07:41 +0800
+Served asset /twitter/bootstrap.js - 304 Not Modified (18ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-05-26 16:07:41 +0800
+Served asset /bootstrap.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-05-26 16:07:41 +0800
+Served asset /home.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/member.js?body=1" for 127.0.0.1 at 2013-05-26 16:07:41 +0800
+Served asset /member.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rooms.js?body=1" for 127.0.0.1 at 2013-05-26 16:07:41 +0800
+Served asset /rooms.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-26 16:07:41 +0800
+Served asset /application.js - 304 Not Modified (67ms)

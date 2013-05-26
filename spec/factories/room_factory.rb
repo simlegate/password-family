@@ -2,7 +2,6 @@
 
 FactoryGirl.define do
   factory :parlour ,class: Room do
-    name: 'parlour'
-    name: 'mijiaketing'	
+    name 'keting'	
   end
 end

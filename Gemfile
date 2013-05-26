@@ -1,5 +1,5 @@
 
-source 'http://ruby.taobao.org'
+source 'http://rubygems.org'
 
 ruby '2.0.0'
 gem 'rails', '3.2.13'
@@ -12,6 +12,7 @@ gem "settingslogic"
 gem 'simple_form'
 gem 'cells'
 gem 'apotomo'
+gem 'devise'
 
 gem 'will_paginate', '~> 3.0'
 gem 'will_paginate-bootstrap'

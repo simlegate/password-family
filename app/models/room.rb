@@ -8,7 +8,7 @@ class Room
   validates_length_of :name,  maximum: 10
 
 
-  has_many :members ,class_name: 'Member'
-  belongs_to :user ,class_name: 'User'
+  has_many :members
+  belongs_to :user
   
 end
