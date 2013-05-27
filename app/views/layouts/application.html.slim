@@ -33,6 +33,9 @@ html
       
     .container-fluid
       .row-fluid    
+        p.notice = notice
+        p.alert = alert 
+
         = yield
       = render_cell :Member,:new
       = render_cell :Room ,:new

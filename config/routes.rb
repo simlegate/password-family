@@ -1,5 +1,7 @@
 PasswordFamily::Application.routes.draw do
 
+  devise_for :models
+
   get "product/index"
 
   get "home/index"
