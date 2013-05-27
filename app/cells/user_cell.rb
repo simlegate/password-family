@@ -1,6 +1,7 @@
 class UserCell < Cell::Rails
 
-  def navbar
+  def navbar args
+    @current_user = args[:current_user]
     render
   end
 

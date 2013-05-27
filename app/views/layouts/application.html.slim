@@ -25,16 +25,19 @@ html
                 a href="#{product_about_path}" data-toggle="modal" 关于
             li
               a#feedback 反馈
+            - if user_signed_in?
+              li
+                a href="#{destroy_user_session_path}" 退出
           - if user_signed_in?
             p.navbar-text.pull-right
               span 当前时间：
               span#time
             ul.nav.pull-right
               li.dropdown
-                = render_cell :User ,:navbar             
+                = render_cell :User ,:navbar,:current_user => current_user             
               li.divider-vertical
           -else
-            ul.nav.pull-right
+            ul.nav.pull-right.unsign
               li
                  button.btn.btn-primary 
                    = link_to "登录", new_user_session_path
@@ -45,23 +48,23 @@ html
               a.brand href="#" 密码家庭
     - if user_signed_in?
       .container-fluid
+        = render "common/flash_success_message"
+        = render "common/flash_error_message"
+        = render "common/flash_alert_message"
         .row-fluid    
-          = render "common/flash_success_message"
-          = render "common/flash_error_message"
-          = render "common/flash_alert_message"
           = yield
         = render_cell :Member,:new
         = render_cell :Room ,:new
     - else
       .jumbotron.masthead
         .container-fluid
+          = render "common/flash_success_message"
+          = render "common/flash_error_message"
+          = render "common/flash_alert_message"
           .row-fluid 
             = render "product/masthead"
             #myCarousel.carousel.slide.span7
               = render "product/carousel"
-      = render "common/flash_success_message"
-      = render "common/flash_error_message"
-      = render "common/flash_alert_message"
       = yield
     = render "foo/footer"
   
