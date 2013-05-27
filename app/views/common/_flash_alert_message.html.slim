@@ -1,0 +1,5 @@
+- unless flash[:alert].blank?
+  .alert
+    a.close data-dismiss="alert" ×
+    strong 警告!&nbsp;
+    span = flash[:alert]

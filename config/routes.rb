@@ -1,6 +1,9 @@
 PasswordFamily::Application.routes.draw do
 
-  devise_for :models
+  devise_for :users
+
+  get "users/index"
+
 
   get "product/index"
 

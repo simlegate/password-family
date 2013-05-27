@@ -1,0 +1,10 @@
+.ligin_container
+  .row-fluid
+    .span1    
+      img src="/assets/lock.jpg"
+      h3 密码家庭
+    .span4
+      h2 忘记密码？
+      = simple_form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :post }) do |f|
+        = f.input :email, :autofocus => true ,label: false ,required: "required"
+        = f.button :submit, "向该邮箱发送邮件"

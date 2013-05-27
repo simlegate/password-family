@@ -31,5 +31,8 @@ html
                  a href="#" 注册
             a.brand href="#" 密码家庭
 
+    = render "common/flash_success_message"
+    = render "common/flash_error_message"
+    = render "common/flash_alert_message"
     = yield
     = render "foo/footer"  

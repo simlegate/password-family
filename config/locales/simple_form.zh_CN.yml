@@ -10,6 +10,10 @@ zh_CN:
         url:      '如：http://www.baidu.com'
       room:
         name:     '如：社交网站类'
+      user:
+        email:    '填入电子邮箱'
+        password: '输入密码'
+        password_confirmation: '再此输入密码'
     hints:
       member:
         website:  '<i class="icon-tag">请填写站点名(10个字之内)</i>'

@@ -10,33 +10,29 @@ html
     = stylesheet_link_tag  :application , :recursive => true
     = javascript_include_tag :application , :recursive => true
     = csrf_meta_tags
-  body
+  body style="padding-top: 41px;"
     .navbar-inverse.navbar.navbar-fixed-top
       .navbar-inner
         .container
           ul.nav
             li.active
-              a.brand 密码家庭
+              a.brand 首页
             li
-              a href="#about" data-toggle="modal" = t(".about")
+              a href="#about" data-toggle="modal" 关于
             li
               a#feedback 反馈
-            li
-              a 退出
-          p.navbar-text.pull-right
-            span 当前时间：
-            span#time
           ul.nav.pull-right
-            li.dropdown
-              = render_cell :User ,:navbar             
-            li.divider-vertical
-      
-    .container-fluid
-      .row-fluid    
-        p.notice = notice
-        p.alert = alert 
+            li
+               button.btn.btn-primary 
+                 = link_to "登录", new_session_path(resource_name) 
+            li.divider-vertica
+            li
+               button.btn.btn-info
+                 = link_to "注册", new_registration_path(resource_name)
+            a.brand href="#" 密码家庭
 
-        = yield
-      = render_cell :Member,:new
-      = render_cell :Room ,:new
-      = render "foo/footer"  
+    = render "common/flash_success_message"
+    = render "common/flash_error_message"
+    = render "common/flash_alert_message"
+    = yield
+    = render "foo/footer"  

@@ -1,0 +1,36 @@
+.ligin_container
+  .row-fluid
+    .span1    
+      img src="/assets/lock.jpg"
+      h3 密码家庭
+    .span4
+      h2 修改密码
+      = simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f|
+        = f.input :email, :autofocus => true ,label: false ,required: "required"
+        = f.input :password, label: false ,required: "required"
+        = f.input :password_confirmation ,label: false , :required => "required"
+        = f.button :submit, "注册"
+        p.link 
+          = link_to "忘记密码?", new_password_path(resource_name)
+
+
+
+<h2>Change your password</h2>
+
+<%= simple_form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :put }) do |f| %>
+  <%= f.error_notification %>
+
+  <%= f.input :reset_password_token, :as => :hidden %>
+  <%= f.full_error :reset_password_token %>
+
+  <div class="form-inputs">
+    <%= f.input :password, :label => "New password", :required => true, :autofocus => true %>
+    <%= f.input :password_confirmation, :label => "Confirm your new password", :required => true %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit, "Change my password" %>
+  </div>
+<% end %>
+
+<%= render "devise/shared/links" %>

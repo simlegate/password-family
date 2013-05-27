@@ -1,0 +1,12 @@
+.ligin_container
+  .row-fluid
+    .span1    
+      img src="/assets/lock.jpg"
+      h3 密码家庭
+    .span4
+      = simple_form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f|
+        = f.input :email, :autofocus => true ,label: false ,required: "required"
+        = f.input :password, label: false ,required: "required"
+        = f.button :submit, "登录"
+        p.link 
+          = link_to "忘记密码?", new_password_path(resource_name)
