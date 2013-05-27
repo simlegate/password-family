@@ -63450,6 +63450,7 @@ Started GET "/assets/github.jpg" for 127.0.0.1 at 2013-05-26 18:06:33 +0000
 Served asset /github.jpg - 304 Not Modified (0ms)
 
 
+<<<<<<< HEAD
 Started GET "/" for 127.0.0.1 at 2013-05-26 22:24:07 +0000
 Processing by ProductController#index as HTML
   Rendered product/_masthead.html.slim (0.0ms)
@@ -83522,3 +83523,179 @@ ActionView::Template::Error (undefined local variable or method `resource_name' 
   Rendered /home/simlegate/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
   Rendered /home/simlegate/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
   Rendered /home/simlegate/.rvm/gems/ruby-1.9.3-p374/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.8ms)
+=======
+Started GET "/" for 127.0.0.1 at 2013-05-26 18:13:41 +0800
+Processing by ProductController#index as HTML
+  Rendered product/_masthead.html.slim (3.2ms)
+  Rendered product/_carousel.html.slim (4.4ms)
+  Rendered product/_marketing.html.slim (6.9ms)
+  Rendered product/index.html.slim within layouts/product (74.5ms)
+Compiled bootstrap_and_overrides.css  (976ms)  (pid 13019)
+Compiled function.css  (3ms)  (pid 13019)
+Compiled member.css  (2ms)  (pid 13019)
+Compiled rooms.css  (2ms)  (pid 13019)
+Compiled bootstrap.js  (77ms)  (pid 13019)
+Compiled home.js  (0ms)  (pid 13019)
+Compiled home.js  (0ms)  (pid 13019)
+Compiled member.js  (0ms)  (pid 13019)
+Compiled rooms.js  (0ms)  (pid 13019)
+Compiled application.js  (105ms)  (pid 13019)
+  Rendered foo/_footer.html.slim (2.8ms)
+Completed 200 OK in 1288ms (Views: 1287.3ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-05-26 18:13:42 +0800
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (71ms)
+
+
+Started GET "/assets/function.css?body=1" for 127.0.0.1 at 2013-05-26 18:13:42 +0800
+Served asset /function.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-26 18:13:42 +0800
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-05-26 18:13:42 +0800
+Served asset /home.css - 200 OK (2ms)
+
+
+Started GET "/assets/member.css?body=1" for 127.0.0.1 at 2013-05-26 18:13:42 +0800
+Served asset /member.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/product.css?body=1" for 127.0.0.1 at 2013-05-26 18:13:42 +0800
+Served asset /product.css - 200 OK (1ms)
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2013-05-26 18:13:42 +0800
+Served asset /rooms.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-26 18:13:42 +0800
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-26 18:13:42 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-05-26 18:13:42 +0800
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (57ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-05-26 18:13:42 +0800
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-05-26 18:13:42 +0800
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-05-26 18:13:42 +0800
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-05-26 18:13:42 +0800
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-05-26 18:13:42 +0800
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-05-26 18:13:42 +0800
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-05-26 18:13:42 +0800
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-05-26 18:13:42 +0800
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-05-26 18:13:42 +0800
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-05-26 18:13:42 +0800
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-05-26 18:13:42 +0800
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-05-26 18:13:42 +0800
+Served asset /twitter/bootstrap.js - 304 Not Modified (18ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-05-26 18:13:42 +0800
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-05-26 18:13:42 +0800
+Served asset /bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-05-26 18:13:42 +0800
+Served asset /home.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/member.js?body=1" for 127.0.0.1 at 2013-05-26 18:13:42 +0800
+Served asset /member.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/product.js?body=1" for 127.0.0.1 at 2013-05-26 18:13:42 +0800
+Served asset /product.js - 200 OK (1ms)
+
+
+Started GET "/assets/rooms.js?body=1" for 127.0.0.1 at 2013-05-26 18:13:42 +0800
+Served asset /rooms.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-26 18:13:42 +0800
+Served asset /application.js - 304 Not Modified (70ms)
+
+
+Started GET "/assets/big_data.jpg" for 127.0.0.1 at 2013-05-26 18:13:43 +0800
+Served asset /big_data.jpg - 200 OK (5ms)
+
+
+Started GET "/assets/pass.jpg" for 127.0.0.1 at 2013-05-26 18:13:43 +0800
+Served asset /pass.jpg - 200 OK (4ms)
+
+
+Started GET "/assets/moble.jpg" for 127.0.0.1 at 2013-05-26 18:13:43 +0800
+Served asset /moble.jpg - 200 OK (1ms)
+
+
+Started GET "/assets/phone.jpg" for 127.0.0.1 at 2013-05-26 18:13:43 +0800
+Served asset /phone.jpg - 200 OK (1ms)
+
+
+Started GET "/assets/radio.jpg" for 127.0.0.1 at 2013-05-26 18:13:43 +0800
+Served asset /radio.jpg - 200 OK (1ms)
+
+
+Started GET "/assets/html5.jpg" for 127.0.0.1 at 2013-05-26 18:13:43 +0800
+Served asset /html5.jpg - 200 OK (1ms)
+
+
+Started GET "/assets/css3.jpg" for 127.0.0.1 at 2013-05-26 18:13:43 +0800
+Served asset /css3.jpg - 200 OK (1ms)
+
+
+Started GET "/assets/fontawesome-webfont.woff?v=3.0.2" for 127.0.0.1 at 2013-05-26 18:13:43 +0800
+Served asset /fontawesome-webfont.woff - 304 Not Modified (2ms)
+
+
+Started GET "/assets/github.jpg" for 127.0.0.1 at 2013-05-26 18:13:43 +0800
+Served asset /github.jpg - 200 OK (0ms)
+
+
+Started GET "/assets/lock.ico" for 127.0.0.1 at 2013-05-26 18:13:43 +0800
+Served asset /lock.ico - 200 OK (1ms)
+>>>>>>> simlegate/master

@@ -6,18 +6,8 @@ guard 'bundler' do
   # watch(/^.+\.gemspec/)
 end
 
-guard 'livereload' do
-  watch(%r{app/views/.+\.(erb|haml|slim)$})
-  watch(%r{app/cells/.+\.(erb|haml|slim|rb)$})
-  watch(%r{app/widgets/.+\.(erb|haml|slim|rb)$})
-  watch(%r{app/helpers/.+\.rb})
-  watch(%r{public/.+\.(css|js|html)})
-  watch(%r{config/locales/.+\.yml})
-  # Rails Assets Pipeline
-  watch(%r{(app|vendor)(/assets/\w+/(.+\.(css|js|html))).*}) { |m| "/assets/#{m[3]}" }
-end
 
-guard 'spork', :cucumber => true, :test_unit => false, :rspec_env => { 'RAILS_ENV' => 'test' } do
+guard 'spork', :rspec_env => { 'RAILS_ENV' => 'test' } do
   watch('config/application.rb')
   watch('config/environment.rb')
   watch('config/environments/test.rb')
@@ -48,12 +38,5 @@ guard 'rspec', :all_after_pass => false, :cli => '--color --format nested --fail
 
   # Factory Girls
   watch(%r{^spec/factories/(.+)_factory\.rb$}) { |m| "spec/models/#{m[1]}_spec.rb" }
-  watch(%r{'app/models/subject_domain/(.+)_factory\.rb$}) { |m| "spec/models/#{m[1]}_spec.rb" }
 
-end
-
-guard 'cucumber', :cli => '--color --drb' do
-  watch(%r{^features/.+\.feature$})
-  watch(%r{^features/support/.+$})          { 'features' }
-  watch(%r{^features/step_definitions/(.+)_steps\.rb$}) { |m| Dir[File.join("**/#{m[1]}.feature")][0] || 'features' }
 end

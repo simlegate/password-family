@@ -1,17 +1,17 @@
 
-source 'http://ruby.taobao.org'
+source 'http://rubygems.org'
 
 ruby '1.9.3'
 gem 'rails', '3.2.13'
 gem "mongoid"
 gem "bson_ext"
-gem "rubycas-client", "2.3.9"
 gem 'jquery-rails',"2.1.4"
 gem 'slim-rails',"1.1.0"
 gem 'rocket_pants', '1.6.1'
 gem "settingslogic"
 gem 'simple_form'
 gem 'cells'
+gem 'apotomo'
 gem 'devise'
 
 gem 'will_paginate', '~> 3.0'
@@ -46,5 +46,3 @@ end
 group :development do
   gem "debugger"
 end
-
-

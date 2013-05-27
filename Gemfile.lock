@@ -1,5 +1,5 @@
 GEM
-  remote: http://ruby.taobao.org/
+  remote: http://rubygems.org/
   specs:
     actionmailer (3.2.13)
       actionpack (= 3.2.13)
@@ -34,6 +34,10 @@ GEM
       hashie (~> 1.0)
       httparty
       net-http-persistent
+    apotomo (1.2.3)
+      cells (>= 3.6.7)
+      hooks (~> 0.2.0)
+      onfire (~> 0.2.0)
     arel (3.0.2)
     bcrypt-ruby (3.0.1)
     bson (1.8.6)
@@ -102,6 +106,7 @@ GEM
       spork (>= 0.8.4)
     hashie (1.2.0)
     hike (1.2.2)
+    hooks (0.2.2)
     httparty (0.11.0)
       multi_json (~> 1.0)
       multi_xml (>= 0.5.2)
@@ -144,6 +149,7 @@ GEM
     multi_xml (0.5.3)
     net-http-persistent (2.8)
     nokogiri (1.5.9)
+    onfire (0.2.0)
     origin (1.1.0)
     orm_adapter (0.4.0)
     polyglot (0.3.3)
@@ -204,8 +210,6 @@ GEM
       rspec-core (~> 2.13.0)
       rspec-expectations (~> 2.13.0)
       rspec-mocks (~> 2.13.0)
-    rubycas-client (2.3.9)
-      activesupport
     settingslogic (2.0.9)
     simple_form (2.1.0)
       actionpack (~> 3.0)
@@ -263,6 +267,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  apotomo
   bson_ext
   capybara
   cells
@@ -282,7 +287,6 @@ DEPENDENCIES
   rails (= 3.2.13)
   rocket_pants (= 1.6.1)
   rspec-rails
-  rubycas-client (= 2.3.9)
   settingslogic
   simple_form
   simplecov

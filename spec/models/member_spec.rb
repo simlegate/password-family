@@ -2,14 +2,22 @@
 
 require 'spec_helper'
 
-describe 'member' do
+describe Member do
   
-  before :all do 
-    @room    = create :parlour
-    @members = create :parlour_members
+  before :each do 
+    @room    = build(:parlour)
+    @member = build(:parlour_member)
   end
-  it "每一个被保存的密码成员应该属于一个房间room" do
-    @member.room.should_not nil
+
+  context '一个密码成员应该属于一个room' do
+    it "没有选择room将不会创建成功" do
+      expect { @member.save! }.to raise_error
+    end
+
+    it "选择room将创建成功" do
+      @member.room = @room
+      expect { @member.save! }.not_to raise_error
+    end
   end
 end
 
