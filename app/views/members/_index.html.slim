@@ -12,6 +12,7 @@
              tr
                - table_members_title.each do | title |
                  th = title
+               th 操作
              - room.members.each do | member |
                tr
                  td 
@@ -21,3 +22,4 @@
                  td = member.portkey
                  td = member.email
                  td = member.url
+                 td  编辑

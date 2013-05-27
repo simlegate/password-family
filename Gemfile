@@ -1,5 +1,4 @@
-
-source 'http://rubygems.org'
+source 'http://ruby.taobao.org'
 
 ruby '1.9.3'
 gem 'rails', '3.2.13'
@@ -44,5 +43,5 @@ group :assets do
 end
 
 group :development do
-  gem "debugger"
+# gem "debugger"
 end
