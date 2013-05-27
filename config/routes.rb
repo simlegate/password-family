@@ -6,11 +6,12 @@ PasswordFamily::Application.routes.draw do
 
 
   get "product/index"
+  get "product/about"
 
   get "home/index"
   root :to => 'product#index'
 
 
   resources :members,:rooms
-
+  match '/:anything', to: "application_with_exceptions#routing_error", as: :error, :constraints => {:anything => /.*/}
 end
