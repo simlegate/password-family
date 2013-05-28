@@ -15,14 +15,12 @@
                    span.label.label-success target="_blank" = member.website
                td = member.username
                td
-                 .input-append
-                   input.input-medium#appendedPrependedInput(type="password" disabled value="#{member.password}")
-                   button.btn.toggle type="button" onclick="toggle_password($(this).parents('td'),'show',#{member.password})"
-                    i.icon-eye-open
+                 i.i.icon-eye-open(onclick="toggle_password($(this).parent(),'#{member.password}')" title="显示或隐藏")
+                 span.pass ××××××××××××
                td = member.email
                td = member.url
                td
                  a data-toggle="modal" href="##{member.id}" 编辑
                  = render_widget :members,:form,:member => member
     - else
-      h1 No Member!
+      = render "members/no_member"

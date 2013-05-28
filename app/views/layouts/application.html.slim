@@ -48,11 +48,12 @@ html
                      button.btn.btn-info
                        = link_to "注册", new_user_registration_path
                   a.brand href="#" 密码家庭
+
+        = render "common/flash_success_message"
+        = render "common/flash_error_message"
+        = render "common/flash_alert_message"
         - if user_signed_in?
           .container-fluid
-            = render "common/flash_success_message"
-            = render "common/flash_error_message"
-            = render "common/flash_alert_message"
             .row-fluid    
               = yield
             = render_widget :members,:form,member: Member.new
@@ -60,9 +61,6 @@ html
         - else
           .jumbotron.masthead
             .container-fluid
-              = render "common/flash_success_message"
-              = render "common/flash_error_message"
-              = render "common/flash_alert_message"
               .row-fluid 
                 = render "product/masthead"
                 #myCarousel.carousel.slide.span7

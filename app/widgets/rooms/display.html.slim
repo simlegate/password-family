@@ -1,6 +1,6 @@
 = widget_div do
-  ul.nav.nav-tabs.sidenav.affix.span3
-    - @rooms.each_with_index do | room,index |
-        li.active
+  ul.nav.sidenav.affix.span3
+    - @rooms.each do | room |
+        li
           a href=url_for_event(:show,:source=>:members,:room_id=>room.id) data-remote="true"
             span = room.name
