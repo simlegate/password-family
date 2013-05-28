@@ -20,3 +20,16 @@ then bundle
 ```ruby
 bundle
 ```
+
+
+在线体验：
+
+```ruby
+http://passwordfamily.ginchenorlee.com
+```
+
+微薄＠me  ：
+
+```ruby
+http://weibo.com/ginchenorlee
+```
