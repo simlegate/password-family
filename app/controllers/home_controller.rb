@@ -3,9 +3,6 @@ class HomeController < ApplicationController
 
   has_widgets do |root|
     root << widget(:rooms)
-  end
-
-  has_widgets do |root|
     root << widget(:members)
   end
 

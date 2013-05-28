@@ -24,6 +24,7 @@ group :test do
   gem 'spork'
   gem 'database_cleaner'
   gem 'factory_girl_rails', :require => false
+  gem 'cucumber-rails', :require => false
   gem "capybara"
   gem "launchy"
   gem 'guard-spork'

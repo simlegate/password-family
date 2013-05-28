@@ -36,7 +36,9 @@ html
                   span#time
                 ul.nav.pull-right
                   li.dropdown
-                    = render_cell :User ,:navbar,:current_user => current_user             
+                    - member = Member.new
+                    - room = Room.new
+                    = render_cell :User ,:navbar,:current_user => current_user,:member => member, :room => room             
                   li.divider-vertical
               -else
                 ul.nav.pull-right.unsign
@@ -56,8 +58,8 @@ html
           .container-fluid
             .row-fluid    
               = yield
-            = render_widget :members,:form,member: Member.new
-            = render_widget :rooms , :new
+            = render_widget :members,:form,member: member
+            = render_widget :rooms , :new, room: room
         - else
           .jumbotron.masthead
             .container-fluid
