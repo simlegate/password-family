@@ -55,7 +55,7 @@ html
             = render "common/flash_alert_message"
             .row-fluid    
               = yield
-            = render_widget :members,:new
+            = render_widget :members,:form,member: Member.new
             = render_widget :rooms , :new
         - else
           .jumbotron.masthead
