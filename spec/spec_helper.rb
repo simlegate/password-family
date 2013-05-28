@@ -10,6 +10,7 @@ Spork.prefork do
   require "factory_girl_rails"
   require "database_cleaner"
   require "simplecov"
+  require "apotomo"
 
   ENGINE_RAILS_ROOT = File.join(File.dirname(__FILE__), '../')
   Dir[File.join(ENGINE_RAILS_ROOT, "spec/support/**/*.rb")].each {|f| require f }

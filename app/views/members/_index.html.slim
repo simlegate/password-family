@@ -22,4 +22,6 @@
                  td = member.portkey
                  td = member.email
                  td = member.url
-                 td  编辑
+                 td
+                   a data-toggle="modal" href="##{member.id}" 编辑
+                   = render 'members/form',:member => member

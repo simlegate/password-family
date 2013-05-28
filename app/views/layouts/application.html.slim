@@ -35,8 +35,7 @@ html
       .row-fluid    
         p.notice = notice
         p.alert = alert 
-
         = yield
-      = render_cell :Member,:new
-      = render_cell :Room ,:new
+      = render_widget :members,:new
+      = render_widget :rooms , :new
       = render "foo/footer"  

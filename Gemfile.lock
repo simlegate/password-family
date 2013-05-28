@@ -127,18 +127,18 @@ GEM
       treetop (~> 1.4.8)
     method_source (0.8.1)
     mime-types (1.23)
-    moneta (0.7.15)
+    moneta (0.7.16)
     mongoid (3.1.4)
       activemodel (~> 3.2)
       moped (~> 1.4)
       origin (~> 1.0)
       tzinfo (~> 0.3.22)
-    mongoid-rspec (1.8.1)
+    mongoid-rspec (1.8.2)
       mongoid (>= 3.0.1)
       rake
       rspec (>= 2.9)
     moped (1.5.0)
-    multi_json (1.7.3)
+    multi_json (1.7.4)
     multi_xml (0.5.3)
     net-http-persistent (2.8)
     nokogiri (1.5.9)
@@ -192,6 +192,10 @@ GEM
       rspec-core (~> 2.13.0)
       rspec-expectations (~> 2.13.0)
       rspec-mocks (~> 2.13.0)
+    rspec-apotomo (0.9.6)
+      apotomo (>= 1.1.4)
+      rails (~> 3.0)
+      rspec-rails (~> 2.6)
     rspec-core (2.13.1)
     rspec-expectations (2.13.0)
       diff-lcs (>= 1.1.3, < 2.0)
@@ -278,6 +282,7 @@ DEPENDENCIES
   mongoid-rspec
   rails (= 3.2.13)
   rocket_pants (= 1.6.1)
+  rspec-apotomo
   rspec-rails
   settingslogic
   simple_form
