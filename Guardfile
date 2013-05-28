@@ -7,7 +7,7 @@ guard 'bundler' do
 end
 
 
-guard 'spork', :rspec_env => { 'RAILS_ENV' => 'test' } do
+guard 'spork',:cucumber => true, :test_unit => false,  :rspec_env => { 'RAILS_ENV' => 'test' } do
   watch('config/application.rb')
   watch('config/environment.rb')
   watch('config/environments/test.rb')
@@ -40,3 +40,4 @@ guard 'rspec', :all_after_pass => false, :cli => '--color --format nested --fail
   watch(%r{^spec/factories/(.+)_factory\.rb$}) { |m| "spec/models/#{m[1]}_spec.rb" }
 
 end
+

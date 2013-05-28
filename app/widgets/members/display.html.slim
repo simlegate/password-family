@@ -1,6 +1,6 @@
 = widget_div do
   .tab-content
-    - unless @room.members.blank?
+    - unless @room.try(:members).blank?
       .tab-pane.active id="#{@room.name}"
          h3 = @room.name
          table.table.table-hover
