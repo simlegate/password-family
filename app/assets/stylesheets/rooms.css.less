@@ -1,3 +1,21 @@
-// Place all the styles related to the rooms controller here.
-// They will automatically be included in application.css.
-// You can use Less here: http://lesscss.org/
+@import "function.css.less" ;
+
+//右边的room 列表导航
+ul.sidenav{
+    margin: 30px 0 0;
+    #border-radius(6px);
+    //border: 1px solid #ddd;
+    li:first-child{
+    	border-top: 1px solid #dddddd;
+    } 
+    li{
+	float: left;
+	width: 90%;
+	line-height: 30px;
+	padding-left: 10px;
+	border-bottom: 1px solid #dddddd;
+	border-left: 1px solid #dddddd;
+	border-right: 1px solid #dddddd;
+	&:hover{background-color: #eeeeee;}
+    }
+}

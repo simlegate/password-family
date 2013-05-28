@@ -20,7 +20,11 @@
                td = member.email
                td = member.url
                td
-                 a data-toggle="modal" href="##{member.id}" 编辑
+                 a data-toggle="modal" href="##{member.id}" title="编辑"
+                   i.icon-edit
+                 span ｜
+                 a data-toggle="modal" href="" title="删除"  onclick="return confirm('确定要删除吗？')"  
+                   i.icon-trash
                  = render_widget :members,:form,:member => member
     - else
       = render "members/no_member"
