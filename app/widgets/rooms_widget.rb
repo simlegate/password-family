@@ -11,8 +11,8 @@ class RoomsWidget < Apotomo::Widget
     update :state => :display
  end
 
- def new
-   render
+ def new arg
+   render :locals => {room: arg[:room]}
  end
 
 end

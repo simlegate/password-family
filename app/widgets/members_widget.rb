@@ -9,7 +9,6 @@ class MembersWidget < Apotomo::Widget
   end
 
   def add(evt)
-    p evt
     @room = Member.create!(evt[:member]).room
     update '#members',:view => :display
   end

@@ -5,9 +5,9 @@ a.dropdown-toggle href="#" data-toggle="dropdown"
   b.caret
 ul.dropdown-menu
   li
-    a href="#user_new_room"  data-toggle="modal" 新建房间
+    a href="##{@room.id}"  data-toggle="modal" 新建房间
   li
-    a href="#user_new_member"  data-toggle="modal" 新建站点
+    a href="##{@member.id}"  data-toggle="modal" 新建站点
   li.divider
   li
     a href="#" 基本信息
