@@ -11,60 +11,63 @@ html
     = javascript_include_tag :application , :recursive => true
     = csrf_meta_tags
   body style="padding-top: 41px;"
-    .navbar-inverse.navbar.navbar-fixed-top
-      .navbar-inner
-        .container
-          ul.nav
-            li.active
+    .password-family
+      .body
+        .navbar-inverse.navbar.navbar-fixed-top
+          .navbar-inner
+            .container
+              ul.nav
+                li.active
+                  - if user_signed_in?
+                     a.brand href="#{home_index_path}" 首页
+                  - else 
+                     a.brand href="#{root_path}" 首页
+                - unless user_signed_in?
+                  li
+                    a href="#{product_about_path}" data-toggle="modal" 关于
+                li
+                  a#feedback 反馈
+                - if user_signed_in?
+                  li
+                    a href="#{destroy_user_session_path}" 退出
               - if user_signed_in?
-                 a.brand href="#{home_index_path}" 首页
-              - else 
-                 a.brand href="#{root_path}" 首页
-            - unless user_signed_in?
-              li
-                a href="#{product_about_path}" data-toggle="modal" 关于
-            li
-              a#feedback 反馈
-            - if user_signed_in?
-              li
-                a href="#{destroy_user_session_path}" 退出
-          - if user_signed_in?
-            p.navbar-text.pull-right
-              span 当前时间：
-              span#time
-            ul.nav.pull-right
-              li.dropdown
-                = render_cell :User ,:navbar,:current_user => current_user             
-              li.divider-vertical
-          -else
-            ul.nav.pull-right.unsign
-              li
-                 button.btn.btn-primary 
-                   = link_to "登录", new_user_session_path
-              li.divider-vertica
-              li
-                 button.btn.btn-info
-                   = link_to "注册", new_user_registration_path
-              a.brand href="#" 密码家庭
-    - if user_signed_in?
-      .container-fluid
-        = render "common/flash_success_message"
-        = render "common/flash_error_message"
-        = render "common/flash_alert_message"
-        .row-fluid    
+                p.navbar-text.pull-right
+                  span 当前时间：
+                  span#time
+                ul.nav.pull-right
+                  li.dropdown
+                    = render_cell :User ,:navbar,:current_user => current_user             
+                  li.divider-vertical
+              -else
+                ul.nav.pull-right.unsign
+                  li
+                     button.btn.btn-primary 
+                       = link_to "登录", new_user_session_path
+                  li.divider-vertica
+                  li
+                     button.btn.btn-info
+                       = link_to "注册", new_user_registration_path
+                  a.brand href="#" 密码家庭
+        - if user_signed_in?
+          .container-fluid
+            = render "common/flash_success_message"
+            = render "common/flash_error_message"
+            = render "common/flash_alert_message"
+            .row-fluid    
+              = yield
+            = render_cell :Member,:new
+            = render_cell :Room ,:new
+        - else
+          .jumbotron.masthead
+            .container-fluid
+              = render "common/flash_success_message"
+              = render "common/flash_error_message"
+              = render "common/flash_alert_message"
+              .row-fluid 
+                = render "product/masthead"
+                #myCarousel.carousel.slide.span7
+                  = render "product/carousel"
           = yield
-        = render_cell :Member,:new
-        = render_cell :Room ,:new
-    - else
-      .jumbotron.masthead
-        .container-fluid
-          = render "common/flash_success_message"
-          = render "common/flash_error_message"
-          = render "common/flash_alert_message"
-          .row-fluid 
-            = render "product/masthead"
-            #myCarousel.carousel.slide.span7
-              = render "product/carousel"
-      = yield
-    = render "foo/footer"
+      = render "foo/footer"
+    
   
