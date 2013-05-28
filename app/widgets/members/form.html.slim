@@ -1,9 +1,9 @@
-#user_new_member.modal.hide.fade tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+.modal.hide.fade id=member.id tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
   .modal-header
     button type="button" class="close" data-dismiss="modal" aria-hidden="true" ×
     h3.new_member id="myModalLabel" 
-      i.icon-heart 新建站点
-  = simple_form_for Member.new, :url => url_for_event(:add),remote: true,defaults: {label: false ,required: "required"} do |f|
+      i.icon-heart = member.new_record? ? '新建站点' : '编辑站点' 
+  = simple_form_for member, :url => url_for_event(:add),remote: true,defaults: {label: false ,required: "required"} do |f|
     .modal-body
       = f.input :website 
       = f.input :username
