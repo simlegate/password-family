@@ -5,7 +5,7 @@ zh_CN:
       member:
         username: '如：zhangsan'
         website:  '如：百度'
-        portkey:  '如：123456'
+        password:  '如：123456'
         email:    '如：123@123.com'
         url:      '如：http://www.baidu.com'
       room:
@@ -18,7 +18,7 @@ zh_CN:
       member:
         website:  '<i class="icon-tag">请填写站点名(10个字之内)</i>'
         username: '<i class="icon-user">请填写站点用户名(20个字之内)</i>'
-        portkey:  "<i class='icon-lock'>请填写站密码(20个字之内)</i>"
+        password:  "<i class='icon-lock'>请填写站密码(20个字之内)</i>"
         room:     "<i class='icon-home'>请选择站点归属</i>"
         email:    "<i class='icon-envelope'>请填写站点注册邮箱(30个字之内)</i>"
         url:      "<i class='icon-globe'>请填写站点链接(50个字之内)</i>"

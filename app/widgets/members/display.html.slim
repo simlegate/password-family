@@ -21,7 +21,11 @@
                        a href="#{member.url}"
                          span.label.label-success target="_blank" = member.website
                      td = member.username
-                     td = member.portkey
+                     td 
+                       .input-append
+                         input.input-medium#appendedPrependedInput(type="password" disabled value="#{member.password}")
+                         button.btn.toggle type="button" onclick="toggle_password($(this).parents('td'),'show',#{member.password})"
+                           i.icon-eye-open
                      td = member.email
                      td = member.url
                      td
@@ -41,7 +45,9 @@
                        a href="#{member.url}"
                          span.label.label-success target="_blank" = member.website
                      td = member.username
-                     td = member.portkey
+                   
+                     td 
+                       input.input-medium(type="password" disabled value="#{member.password}")
                      td = member.email
                      td = member.url
                      td
