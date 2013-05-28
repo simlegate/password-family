@@ -35,13 +35,13 @@ group :test do
 end
 
 
-group :assets do
+#group :assets do
   gem 'coffee-rails', '~> 3.2.1'
   gem "less-rails" 
   gem 'therubyracer'
   gem 'uglifier', '>= 1.0.3'
   gem "twitter-bootstrap-rails"
-end
+#end
 
 group :development do
 # gem "debugger"
