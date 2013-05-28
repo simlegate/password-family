@@ -8,7 +8,8 @@ describe MembersWidget do
   end
 
   it "add new members" do
-    # render_widget(:members,:new).should == "<h1>No Comment!</h1>"
+    room = create :parlour
+    trigger(:add, :members, :member => attributes_for(:parlour_member,room_id: room.id)).first.should include("#members")
   end
 
   it 'renders properly' do

@@ -14,4 +14,5 @@ class RoomsWidget < Apotomo::Widget
  def new
    render
  end
+
 end
