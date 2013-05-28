@@ -31,6 +31,7 @@ group :test do
   gem 'guard-bundler'
   gem 'simplecov', :require => false
   gem 'mongoid-rspec'
+  gem 'rspec-apotomo'
 end
 
 
@@ -43,5 +44,5 @@ group :assets do
 end
 
 group :development do
-  gem "debugger"
+# gem "debugger"
 end

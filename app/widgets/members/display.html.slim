@@ -1,0 +1,28 @@
+= widget_div do
+  .tab-content
+    - if Member.all.blank?
+      h1 No Member!
+    - else
+      - Room.all.each do | room |
+        - if room.members.blank?
+          h1 No Member!
+        - else
+          .tab-pane.active id="#{room.name}"
+             h3 = room.name
+             table.table.table-hover
+               tr
+                 - table_members_title.each do | title |
+                   th = title
+                 th 操作
+               - room.members.each do | member |
+                 tr
+                   td 
+                     a href="#{member.url}"
+                       span.label.label-success target="_blank" = member.website
+                   td = member.username
+                   td = member.portkey
+                   td = member.email
+                   td = member.url
+                   td
+                     a data-toggle="modal" href="##{member.id}" 编辑
+                     = render_widget :members,:new,:member => member

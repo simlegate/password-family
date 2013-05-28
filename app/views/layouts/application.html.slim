@@ -10,6 +10,7 @@ html
     = stylesheet_link_tag  :application , :recursive => true
     = javascript_include_tag :application , :recursive => true
     = csrf_meta_tags
+<<<<<<< HEAD
   body style="padding-top: 41px;"
     .password-family
       .body
@@ -55,8 +56,8 @@ html
             = render "common/flash_alert_message"
             .row-fluid    
               = yield
-            = render_cell :Member,:new
-            = render_cell :Room ,:new
+            = render_widget :members,:new
+            = render_widget :rooms , :new
         - else
           .jumbotron.masthead
             .container-fluid

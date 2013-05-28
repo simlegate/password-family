@@ -1,0 +1,16 @@
+.modal.hide.fade id=member.id tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+  .modal-header
+    button type="button" class="close" data-dismiss="modal" aria-hidden="true" ×
+    h3.new_member id="myModalLabel" 
+      i.icon-heart 新建站点
+  = simple_form_for member ,defaults: {label: false ,required: "required"} do |f|
+    .modal-body
+      = f.input :website 
+      = f.input :username
+      = f.input :portkey
+      = f.association :room, collection: Room.all
+      = f.input :email
+      = f.input :url
+    .modal-footer
+      button.btn data-dismiss="modal" aria-hidden="true" 取消
+      = f.button :submit
