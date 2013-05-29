@@ -2,7 +2,7 @@
 class MembersController < ApplicationController
 
   def create
-    params[:member][:portkey] = Base64.encode64(params[:member][:portkey])
+    params[:member][:password] = Base64.encode64(params[:member][:password])
 
    #  Base64.decode64(code) 
     member = Member.new params[:member]

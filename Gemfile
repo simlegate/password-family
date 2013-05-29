@@ -12,6 +12,7 @@ gem 'simple_form'
 gem 'cells'
 gem 'apotomo'
 gem 'devise'
+gem 'devise-encryptable'
 
 gem 'will_paginate', '~> 3.0'
 gem 'will_paginate-bootstrap'

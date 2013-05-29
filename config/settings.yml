@@ -1,0 +1,16 @@
+# encoding: utf-8
+defaults: &defaults
+  site:         '密码家庭'
+  default_room: '密家客厅'
+  default_pass: '××××××××××××'
+  site_url:     'http://passwordfamily.ginchenorlee.com'
+
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults
