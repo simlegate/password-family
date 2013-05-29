@@ -5,9 +5,10 @@
           a.span9 href=url_for_event(:show,:source=>:members,:room_id=>room.id) data-remote="true"
               span = room.name
           .span3.pull-right
-             a data-toggle="modal" href="" title="编辑"
+             a data-toggle="modal" href="##{room.id}" title="编辑"
                i.icon-edit
              span ｜
-             a data-toggle="modal" href="" title="删除"  onclick="return confirm('确定要删除吗？')"  
+             a href=url_for_event(:destroy,:source=>:rooms,:id=>room.id) data-remote="true" title="删除"  onclick="return confirm('确定要删除吗？')"
                i.icon-trash
-             /= render_widget :rooms,:form,:room => room
+        = render_widget :rooms,:form,:room => room
+

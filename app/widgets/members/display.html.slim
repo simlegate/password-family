@@ -9,7 +9,7 @@
                th = title
              th 操作
            - @room.members.each do | member |
-             tr
+             tr id="member_tr_#{member.id}"
                td 
                  a href="#{member.url}"
                    span.label.label-success target="_blank" = member.website
@@ -23,7 +23,8 @@
                  a data-toggle="modal" href="##{member.id}" title="编辑"
                    i.icon-edit
                  span ｜
-                 a data-toggle="modal" href="" title="删除"  onclick="return confirm('确定要删除吗？')"  
+                 a href=url_for_event(:destroy,:source=>:members,:id=>member.id) data-remote="true" title="删除"  onclick="return confirm('确定要删除吗？')"
+
                    i.icon-trash
                  = render_widget :members,:form,:member => member
     - else

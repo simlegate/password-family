@@ -2,8 +2,8 @@
   .modal-header
     button type="button" class="close" data-dismiss="modal" aria-hidden="true" ×
     h3.new_member id="myModalLabel" 
-      i.icon-heart = member.new_record? ? '新建站点' : '编辑站点' 
-  = simple_form_for member, :url => url_for_event(:add),remote: true,defaults: {label: false ,required: "required"} do |f|
+      i.icon-heart = form_title(member)
+  = simple_form_for member, :url => form_url(member),remote: true,defaults: {label: false ,required: "required"} do |f|
     .modal-body
       = f.input :website , input_html:{ maxlength: 10 }
       = f.input :username,input_html: { maxlength: 20 }
