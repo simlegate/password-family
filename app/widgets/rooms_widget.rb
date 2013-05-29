@@ -1,18 +1,32 @@
 class RoomsWidget < Apotomo::Widget
- responds_to_event :add
+ helper RoomsHelper
+ responds_to_event :create
+ responds_to_event :replace
+ responds_to_event :destroy
 
  def display
     @rooms = Room.all
     render 
   end
 
- def add(evt)
+ def create(evt)
     @room = Room.create! evt[:room]
     update :state => :display
  end
 
- def new arg
+ def form arg
    render :locals => {room: arg[:room]}
+ end
+
+ def replace(evt)
+    room = Room.find(evt[:id])
+    room.update_attributes(evt[:room])
+    update :state => :display
+ end
+
+ def destroy(evt)
+   room = Room.find(evt[:id])
+   update :state => :display if room.destroy 
  end
 
 end

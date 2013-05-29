@@ -11,15 +11,15 @@ class  ApplicationWithExceptionsController < ActionController::Base
   # rescue_from NameError
   # rescue_from CanCan::AccessDenied
   
-  rescue_from Exception do | exception|
-    flash[:error]=  exception.message
-    render :error , :layout => false
-  end
-  
-  
-  def routing_error
-    flash[:error]= "你所访问的url不存在！"
-    render :error ,:layout => false
-  end
+#  rescue_from Exception do | exception|
+#    flash[:error]=  exception.message
+#    render :error , :layout => false
+#  end
+#  
+#  
+#  def routing_error
+#    flash[:error]= "你所访问的url不存在！"
+#    render :error ,:layout => false
+#  end
  
 end
