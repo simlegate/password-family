@@ -33,3 +33,7 @@ http://passwordfamily.ginchenorlee.com
 ```ruby
 http://weibo.com/ginchenorlee
 ```
+## TODO
+
+* 异步采用小步更新
+* add apotomo test
