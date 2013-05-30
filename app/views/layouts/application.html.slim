@@ -29,7 +29,7 @@ html
                   a#feedback 反馈
                 - if user_signed_in?
                   li
-                    a href="#{destroy_user_session_path}" 退出
+                    = link_to "退出" ,destroy_user_session_path,method:"delete"
               - if user_signed_in?
                 p.navbar-text.pull-right
                   span 当前时间：
@@ -50,10 +50,10 @@ html
                      button.btn.btn-info
                        = link_to "注册", new_user_registration_path
                   a.brand href="#" 密码家庭
-
-        = render "common/flash_success_message"
-        = render "common/flash_error_message"
-        = render "common/flash_alert_message"
+        .message
+          = render "common/flash_success_message"
+          = render "common/flash_error_message"
+          = render "common/flash_alert_message"
         - if user_signed_in?
           .container-fluid
             .row-fluid    

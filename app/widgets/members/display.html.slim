@@ -15,16 +15,15 @@
                    span.label.label-success target="_blank" = member.website
                td = member.username
                td
-                 i.i.icon-eye-open(onclick="toggle_password($(this).parent(),'#{member.password}')" title="显示或隐藏")
+                 i.i.icon-eye-open(onclick="toggle_password($(this).parent(),'#{member.cryptogram}')" title="显示或隐藏")
                  span.pass ××××××××××××
                td = member.email
                td = member.url
                td
                  a data-toggle="modal" href="##{member.id}" title="编辑"
                    i.icon-edit
-                 span ｜
-                 a href=url_for_event(:destroy,:source=>:members,:id=>member.id) data-remote="true" title="删除"  onclick="return confirm('确定要删除吗？')"
-
+                 span |
+                 a.delete href=url_for_event(:destroy,:source=>:members,:id=>member.id) data-remote="true" title="删除" 
                    i.icon-trash
                  = render_widget :members,:form,:member => member
     - else

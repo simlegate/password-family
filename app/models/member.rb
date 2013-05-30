@@ -3,11 +3,11 @@ class Member
 
   field :website,  type:String
   field :username, type:String
-  field :password, type:String
+  field :cryptogram, type:String
   field :email,    type:String 
   field :url  ,    type:String
 
-  validates_presence_of :username ,:password, :room_id
+  validates_presence_of :username ,:cryptogram, :room_id,:website
   validates_length_of :website,  maximum: 10
   validates_length_of :username, maximum: 30
   validates_length_of :email ,   maximum: 30
