@@ -7,7 +7,7 @@
     .modal-body
       div id="room_validate_#{@room.id}"
       = f.input :name ,input_html: { maxlength: 10 }
-      = f.input :user,as: :hidden,input_html:{value: "123456"}
+      = f.input :user,as: :hidden,input_html:{value: current_user}
     .modal-footer
       button.btn data-dismiss="modal" aria-hidden="true" 取消
       = f.button :submit

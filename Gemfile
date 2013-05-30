@@ -13,6 +13,7 @@ gem 'cells'
 gem 'apotomo'
 gem 'devise'
 gem 'devise-encryptable'
+gem 'heroku'
 
 gem 'will_paginate', '~> 3.0'
 gem 'will_paginate-bootstrap'
