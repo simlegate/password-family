@@ -1,11 +1,14 @@
 class RoomsWidget < Apotomo::Widget
+ include Devise::Controllers::Helpers
+ helper_method :current_user
  helper RoomsHelper
+
  responds_to_event :create
  responds_to_event :replace
  responds_to_event :destroy
 
  def display
-    @rooms = Room.all
+    @rooms = current_user.rooms
     render 
   end
 

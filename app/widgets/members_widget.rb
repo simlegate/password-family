@@ -11,7 +11,8 @@ class MembersWidget < Apotomo::Widget
 
 
   def display
-    @room = Room.first
+    # set room default
+    @room = current_user.rooms.first
     render
   end
 
