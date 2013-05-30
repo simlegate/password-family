@@ -1,10 +1,13 @@
 class MembersWidget < Apotomo::Widget
+
+  include Devise::Controllers::Helpers
+  helper_method :current_user
   helper MemberHelper
+
   responds_to_event :create
   responds_to_event :show
   responds_to_event :replace
   responds_to_event :destroy
-
 
   def display
     @room = Room.first
@@ -29,8 +32,11 @@ class MembersWidget < Apotomo::Widget
     member = Member.find(evt[:id])
     member.update_attributes(evt[:member])
     @room = member.room
-#   update "#member_tr_#{member.id}",:view => :display
-    update '#members',:view => :display
+    if member.update_attributes(evt[:member])
+      update '#members',:view => :display
+    else
+      update "#member_validate_#{member.id}",:text => member.errors.first[1]
+    end
   end
 
   def destroy(evt)

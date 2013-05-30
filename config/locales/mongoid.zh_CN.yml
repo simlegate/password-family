@@ -1,0 +1,10 @@
+# encoding: utf-8
+zh_CN:
+  mongoid:
+    errors:
+      models:
+        room:
+          attributes:
+            name:
+              taken: 房间名已存在
+

@@ -15,13 +15,17 @@ class RoomsWidget < Apotomo::Widget
  end
 
  def form arg
-   render :locals => {room: arg[:room]}
+   @room = arg[:room]
+   render 
  end
 
  def replace(evt)
-    room = Room.find(evt[:id])
-    room.update_attributes(evt[:room])
-    update :state => :display
+    @room = Room.find(evt[:id])
+    if @room.update_attributes(evt[:room])
+      update :state => :display
+    else
+      update "#room_validate_#{@room.id}",:text => @room.errors.first[1]
+    end
  end
 
  def destroy(evt)
