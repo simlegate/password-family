@@ -1,10 +1,11 @@
-.modal.hide.fade id=room.id tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+.modal.hide.fade id=@room.id tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
   .modal-header
     button type="button" class="close" data-dismiss="modal" aria-hidden="true" ×
     h3.new_member id="myModalLabel" 
-      i.icon-heart =form_title(room)
-  = simple_form_for room ,:url => form_url(room),remote: true ,defaults: {label: false ,required: "required"}do |f|
+      i.icon-heart =form_title(@room)
+  = simple_form_for @room ,:url => form_url(@room),remote: true ,defaults: {label: false ,required: "required"}do |f|
     .modal-body
+      div id="room_validate_#{@room.id}"
       = f.input :name ,input_html: { maxlength: 10 }
       = f.input :user,as: :hidden,input_html:{value: "123456"}
     .modal-footer
