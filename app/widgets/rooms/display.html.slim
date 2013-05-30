@@ -1,14 +1,19 @@
 = widget_div do
-  ul.nav.sidenav.affix.span3
+  ul.nav.sidenav.span12
     - @rooms.each do | room |
         li
           a.span9 href=url_for_event(:show,:source=>:members,:room_id=>room.id) data-remote="true"
               span = room.name
-          .span3.pull-right
-             a data-toggle="modal" href="##{room.id}" title="编辑"
-               i.icon-edit
-             span ｜
-             a href=url_for_event(:destroy,:source=>:rooms,:id=>room.id) data-remote="true" title="删除"  onclick="return confirm('确定要删除吗？')"
-               i.icon-trash
+          .span3.pull-right style="text-align: right;"
+            - if room.name.eql?(Settings.default_room)
+              i.icon-heart 
+              i.icon-heart 
+              i.icon-heart 
+            - else
+              a data-toggle="modal" href="##{room.id}" title="编辑"
+                i.icon-edit
+              span|
+              a.delete href=url_for_event(:destroy,:source=>:rooms,:id=>room.id) data-remote="true" title="删除" 
+                i.icon-trash
         = render_widget :rooms,:form,:room => room
 

@@ -1,4 +1,4 @@
-.modal.hide.fade id=member.id tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+.modal.hide.fade id="#{member.website.blank? ? 'user_new_member' : member.id}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
   .modal-header
     button type="button" class="close" data-dismiss="modal" aria-hidden="true" ×
     h3.new_member id="myModalLabel" 
@@ -7,11 +7,10 @@
     .modal-body
       = f.input :website , input_html:{ maxlength: 10 }
       = f.input :username,input_html: { maxlength: 20 }
-      = f.input :password,input_html: { maxlength: 20 }
+      = f.input :cryptogram,input_html: { maxlength: 20 }
       = f.association :room, collection: Room.all ,include_blank: false
       = f.input :email,input_html: { maxlength: 30 }
       = f.input :url,input_html: { maxlength: 50 }
     .modal-footer
       button.btn data-dismiss="modal" aria-hidden="true" 取消
       = f.button :submit ,:data=>{:dismiss => "model"}
-      /= f.button :submit

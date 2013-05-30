@@ -25,8 +25,7 @@ class User
   has_many :rooms
 
   after_create do | user |
-    room = Room.create(user: user, name: Settings.default_room)
-    Member.create!(room: room ,website: Settings.site ,username: user.email,password:  Base64.encode64(Settings.default_pass),email: user.email,url:Settings.site_url)
+    Room.create(user: user, name: Settings.default_room)
   end
 
 end
