@@ -10,8 +10,12 @@ class RoomsWidget < Apotomo::Widget
   end
 
  def create(evt)
-    @room = Room.create! evt[:room]
-    update :state => :display
+    @room = Room.new(evt[:room])
+    if @room.save
+      update :state => :display
+    else
+      update "#room_validate_#{evt[:id]}",:text => @room.errors.first[1]
+    end
  end
 
  def form arg
@@ -32,5 +36,4 @@ class RoomsWidget < Apotomo::Widget
    room = Room.find(evt[:id])
    update :state => :display if room.destroy 
  end
-
 end
