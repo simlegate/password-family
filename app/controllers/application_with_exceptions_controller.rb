@@ -11,10 +11,10 @@ class  ApplicationWithExceptionsController < ActionController::Base
   # rescue_from NameError
   # rescue_from CanCan::AccessDenied
   
-  rescue_from Exception do | exception|
-    flash[:error]=  exception.message
-    render :error , :layout => false
-  end
+#  rescue_from Exception do | exception|
+#    flash[:error]=  exception.message
+#    render :error , :layout => false
+#  end
 
   
   def routing_error

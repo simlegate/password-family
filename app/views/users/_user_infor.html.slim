@@ -1,0 +1,14 @@
+.modal.hide.fade id="#{current_user.id}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+  .modal-header
+    button type="button" class="close" data-dismiss="modal" aria-hidden="true" ×
+    h3.new_member id="myModalLabel" 
+      i.icon-heart 编辑基本信息
+  = simple_form_for(resource,  :url => registration_path(resource), :html => { :method => :put } ,remote: true) do |f|
+    .modal-body
+      = f.input :email, :required => true, :autofocus => true,label: false
+      = f.input :password, :autocomplete => "off", :hint => "输入旧密码", :required => true ,input_html: { maxlength: 20 },label: false
+      = f.input :password_confirmation, :required => true ,input_html: { maxlength: 20 },:hint => "再次输入旧密码",label: false
+      = f.input :current_password, :hint => "请输入新密码", :required => true,input_html: { maxlength: 20 },label: false
+    .modal-footer
+      button.btn data-dismiss="modal" aria-hidden="true" 取消
+      = f.button :submit, "保存"

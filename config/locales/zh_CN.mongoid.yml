@@ -1,0 +1,12 @@
+zh_CN:
+  mongoid:
+    errors:
+      models:
+        user:
+          attributes:
+            email: 
+              not_found:  "此邮箱没有注册！"
+              taken:      "此邮箱已被注册！"
+            password:
+              too_short:  "请输入6位以上密码"
+              confirmation: "两次输入密码不一致"

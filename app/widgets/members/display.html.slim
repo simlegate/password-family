@@ -21,8 +21,8 @@
                td = member.url
                td
                  a data-toggle="modal" href="##{member.id}" title="编辑"
-                   i.icon-edit
-                 span |
+                   i.icon-pencil
+                 span|
                  a.delete href=url_for_event(:destroy,:source=>:members,:id=>member.id) data-remote="true" title="删除" 
                    i.icon-trash
                  = render_widget :members,:form,:member => member
