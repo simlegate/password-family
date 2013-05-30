@@ -9,6 +9,7 @@ class MembersWidget < Apotomo::Widget
   responds_to_event :replace
   responds_to_event :destroy
 
+
   def display
     @room = Room.first
     render

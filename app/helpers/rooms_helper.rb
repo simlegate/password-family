@@ -6,7 +6,7 @@ module RoomsHelper
   end
 
   def form_url room
-    room.new_record? ? url_for_event(:create) : url_for_event(:replace,:id=>room.id)
+    room.new_record? ? url_for_event(:create,:id=>room.id) : url_for_event(:replace,:id=>room.id)
   end
 
 end
