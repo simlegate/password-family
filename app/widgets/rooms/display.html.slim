@@ -11,7 +11,7 @@
               i.icon-heart 
             - else
               a data-toggle="modal" href="##{room.id}" title="编辑"
-                i.icon-edit
+                i.icon-pencil
               span|
               a.delete href=url_for_event(:destroy,:source=>:rooms,:id=>room.id) data-remote="true" title="删除" 
                 i.icon-trash

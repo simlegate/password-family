@@ -1,21 +1,21 @@
-# Additional translations at https://github.com/plataformatec/devise/wiki/I18n
-
-en:
+zh_CN:
   devise:
     confirmations:
-      confirmed: "Your account was successfully confirmed. You are now signed in."
-      send_instructions: "You will receive an email with instructions about how to confirm your account in a few minutes."
+      confirmed: "已对你的邮箱进行了验证，即可马上登录"
+      send_instructions: "几分钟后你后收到一份验证邮件!"
       send_paranoid_instructions: "If your email address exists in our database, you will receive an email with instructions about how to confirm your account in a few minutes."
     failure:
-      already_authenticated: "You are already signed in."
-      inactive: "Your account was not activated yet."
-      invalid: "Invalid email or password."
-      invalid_token: "Invalid authentication token."
-      locked: "Your account is locked."
-      not_found_in_database: "Invalid email or password."
-      timeout: "Your session expired, please sign in again to continue."
-      unauthenticated: "You need to sign in or sign up before continuing."
-      unconfirmed: "You have to confirm your account before continuing."
+      user:
+        invalid: "无效的密码或者邮箱！"
+      already_authenticated: "你已经登录了！"
+      inactive: "你的帐号还没有被激活！"
+      invalid: "无效的密码或者邮箱！"
+      invalid_token: "无效的身份验证令牌!"
+      locked: "您的帐号已被锁定。"
+      not_found_in_database: "你的帐号没有注册！"
+      timeout: "你的登录失效，请重新登录！"
+      unauthenticated: "你必须先注册或者登录后才能继续！"
+      unconfirmed: "请先验证你的帐号再继续！"
     mailer:
       confirmation_instructions:
         subject: "Confirmation instructions"

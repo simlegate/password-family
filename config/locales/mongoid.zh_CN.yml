@@ -7,4 +7,7 @@ zh_CN:
           attributes:
             name:
               taken: 房间名已存在
-
+        user:
+          attributes:
+            current_password:
+              invalid: 旧密码错误

@@ -4,6 +4,7 @@ class HomeController < ApplicationController
   has_widgets do |root|
     root << widget(:rooms)
     root << widget(:members)
+    root << widget(:users)
   end
 
   def index   
