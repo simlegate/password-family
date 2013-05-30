@@ -60,7 +60,7 @@ html
               = yield
             = render_widget :members,:form,member: member
             = render_widget :rooms , :form, room: room
-            = render "users/user_infor" ,:resource => current_user
+            = render_widget :users , :form
         - else
           .jumbotron.masthead
             .container-fluid
