@@ -84,7 +84,6 @@ GEM
       devise (>= 2.1.0)
     diff-lcs (1.2.4)
     erubis (2.7.0)
-    excon (0.22.1)
     execjs (1.4.0)
       multi_json (~> 1.0)
     factory_girl (4.2.0)
@@ -113,14 +112,6 @@ GEM
       guard (>= 1.1)
       spork (>= 0.8.4)
     hashie (1.2.0)
-    heroku (2.39.4)
-      heroku-api (~> 0.3.7)
-      launchy (>= 0.3.2)
-      netrc (~> 0.7.7)
-      rest-client (~> 1.6.1)
-      rubyzip
-    heroku-api (0.3.11)
-      excon (~> 0.22.1)
     hike (1.2.2)
     hooks (0.2.2)
     httparty (0.11.0)
@@ -164,7 +155,6 @@ GEM
     multi_json (1.7.4)
     multi_xml (0.5.3)
     net-http-persistent (2.8)
-    netrc (0.7.7)
     nokogiri (1.5.9)
     onfire (0.2.0)
     origin (1.1.0)
@@ -205,8 +195,6 @@ GEM
     rdoc (3.12.2)
       json (~> 1.4)
     ref (1.0.5)
-    rest-client (1.6.7)
-      mime-types (>= 1.16)
     rocket_pants (1.6.1)
       actionpack (~> 3.0)
       api_smith
@@ -233,7 +221,6 @@ GEM
       rspec-core (~> 2.13.0)
       rspec-expectations (~> 2.13.0)
       rspec-mocks (~> 2.13.0)
-    rubyzip (0.9.9)
     settingslogic (2.0.9)
     simple_form (2.1.0)
       actionpack (~> 3.0)
@@ -304,7 +291,6 @@ DEPENDENCIES
   guard-bundler
   guard-rspec
   guard-spork
-  heroku
   jquery-rails (= 2.1.4)
   launchy
   less-rails
