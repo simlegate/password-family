@@ -1,7 +1,7 @@
 class UsersWidget < Apotomo::Widget
   include Devise::Controllers::Helpers
   helper_method :sign_in
-
+  helper_method :current_user
   responds_to_event :replace
 
   def form

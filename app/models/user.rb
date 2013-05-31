@@ -25,7 +25,7 @@ class User
   has_many :rooms
 
   after_create do | user |
-    Room.create(user_id: user.id, name: Settings.default_room)
+    Room.create!(user_id: user.id, name: Settings.default_room)
   end
 
 end
