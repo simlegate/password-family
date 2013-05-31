@@ -12,6 +12,14 @@ jQuery(function(){
 //　　　　$(".message").html('<div class="alert alert-info"><a class="close" data-dismiss="alert">×</a><strong>成功!&nbsp;</strong><span>操作成功！</span></div>')
 //    });
 
+
+    
+    $('.simple_form').live('ajax:success', function(event, xhr, settings) {
+	$('.modal').modal('hide')
+	　$(".message").html('<div class="alert alert-info"><a class="close" data-dismiss="alert">×</a><strong>成功!&nbsp;</strong><span>操作成功！</span></div>')
+    })
+
+
     $('a.delete').live('ajax:beforeSend', function(event, xhr, settings) {
 	if(confirm('确定要删除吗?')){
 	    return true;

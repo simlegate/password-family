@@ -35,9 +35,9 @@ class MembersWidget < Apotomo::Widget
     member.update_attributes(evt[:member])
     @room = member.room
     if member.update_attributes(evt[:member])
-      update '#members',:view => :display
+      return update '#members',:view => :display
     else
-      update "#member_validate_#{member.id}",:text => member.errors.first[1]
+      return update "#member_validate_#{member.id}",:text => member.errors.first[1]
     end
   end
 
