@@ -4,7 +4,7 @@ class Room
   field :name, type:String
 
   validates_presence_of :name
-  validates_uniqueness_of :name ,:scope => :use_id
+  validates_uniqueness_of :name ,:scope => :user_id
   validates_length_of :name,  maximum: 10
 
 
