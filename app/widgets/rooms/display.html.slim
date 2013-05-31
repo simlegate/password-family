@@ -5,7 +5,7 @@
           a.span9 href=url_for_event(:show,:source=>:members,:room_id=>room.id) data-remote="true"
               span = room.name
           .span3.pull-right style="text-align: right;"
-            - if room.name.eql?(Settings.default_room)
+            - if room.default?
               i.icon-heart 
               i.icon-heart 
               i.icon-heart 
