@@ -9,7 +9,7 @@
       = f.input :website , input_html:{ maxlength: 10 }
       = f.input :username,input_html: { maxlength: 20 }
       = f.input :cryptogram,input_html: { maxlength: 20 }
-      = f.association :room, collection: Room.all ,include_blank: false
+      = f.association :room, collection: current_user.rooms ,include_blank: false
       = f.input :email,input_html: { maxlength: 30 }
       = f.input :url,input_html: { maxlength: 50 }
     .modal-footer
