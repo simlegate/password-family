@@ -13,6 +13,7 @@ zh_CN:
       user:
         email:    '填入电子邮箱'
         password: '输入密码'
+        current_password: '请输入旧密码'	
         password_confirmation: '再此输入密码'
     hints:
       member:

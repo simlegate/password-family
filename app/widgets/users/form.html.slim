@@ -6,7 +6,7 @@
   = simple_form_for(current_user,  :url => url_for_event(:replace,:id=>current_user.id) ,remote: true) do |f|
     .modal-body
       div id="user_validate_#{current_user.id}"
-      = f.input :email, :required => true, :autofocus => true,label: false
+      = f.input :email, :required => true, :autofocus => true,label: false ,:disabled => true
       = f.input :current_password, :hint => "输入旧密码", :required => true,input_html: { maxlength: 20 },label: false
       = f.input :password, :autocomplete => "off", :hint => "输入新密码", :required => true ,input_html: { maxlength: 20 },label: false
       = f.input :password_confirmation, :required => true ,input_html: { maxlength: 20 },:hint => "再次输入新密码",label: false
