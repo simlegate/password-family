@@ -3,9 +3,7 @@ class UsersWidget < Apotomo::Widget
   helper_method :current_user
   helper_method :sign_in
 
-
   responds_to_event :replace
-
 
   def display
     render
@@ -21,7 +19,8 @@ class UsersWidget < Apotomo::Widget
       # do not logging out after password updated
       sign_in(user, :bypass => true)
     else
-      update "#user_validate_#{current_user.id}",:text => user.errors.first[1]
+      #  update "#user_validate_#{current_user.id}",:text => user.errors.first[1]
+      update ".message", :view => 'error_message', locals: {:message => user.errors.first[1]}
     end
   end
 
