@@ -5,7 +5,7 @@
       i.icon-heart =form_title(@room)
   = simple_form_for @room ,:url => form_url(@room),remote: true ,defaults: {label: false ,required: "required"}do |f|
     .modal-body
-      div id="room_validate_#{@room.id}"
+      //div id="room_validate_#{@room.id}"
       = f.input :name ,input_html: { maxlength: 10 }
       = f.input :user_id,as: :hidden,input_html:{value: current_user.id}
     .modal-footer

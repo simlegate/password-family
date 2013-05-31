@@ -5,7 +5,7 @@
       i.icon-heart = form_title(member)
   = simple_form_for member, :url => form_url(member),remote: true,defaults: {label: false ,required: "required"} do |f|
     .modal-body
-      div id="member_validate_#{member.id}"
+      //div id="member_validate_#{member.id}"
       = f.input :website , input_html:{ maxlength: 10 }
       = f.input :username,input_html: { maxlength: 20 }
       = f.input :cryptogram,input_html: { maxlength: 20 }
