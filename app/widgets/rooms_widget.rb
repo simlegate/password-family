@@ -13,7 +13,7 @@ class RoomsWidget < Apotomo::Widget
   end
 
  def create(evt)
-    @room = Room.new(evt[:room])
+    @room = current_user.rooms.new(evt[:room])
     if @room.save
       update :state => :display
     else
@@ -28,7 +28,7 @@ class RoomsWidget < Apotomo::Widget
  end
 
  def replace(evt)
-    @room = Room.find(evt[:id])
+    @room = current_user.rooms.find(evt[:id])
     if @room.update_attributes(evt[:room])
       update :state => :display
     else
