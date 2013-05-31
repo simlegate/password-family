@@ -3,7 +3,7 @@ password-family
 
 you can manage all kinds of passwords with it online . 
 
-please preview [test version](http://passwordfamily.ginchenorlee.com)
+please preview [test version](http://passwordfamily.ginchenorlee.com) and give me you advise.
 
 
 ## Requirements
