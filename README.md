@@ -1,37 +1,25 @@
 password-family
 ===============
 
-在线密码管理，password manage on line.
+you can manage all kinds of passwords with it online . 
 
-## 　要求
+please preview [test version](http://passwordfamily.ginchenorlee.com)
+
+
+## Requirements
 
 * ruby 1.9.3
 * rails 3.2
-* mongoid 
+* mongodb & mongoid 
 
-### install
+## install
 
 ```ruby
 git clone git@github.com:Byronlee/password-family.git
+
+bundle && rails s
 ```
 
-then bundle
+## Contacts us  
 
-```ruby
-bundle
-```
-
-
-在线体验：
-
-```ruby
-http://passwordfamily.ginchenorlee.com
-```
-
-微薄＠me  ：
-
-```ruby
-http://weibo.com/ginchenorlee
-```
-## Contacts us
 [@Byronlee](https://github.com/Byronlee)  [@simlegate](https://github.com/simlegate)  
