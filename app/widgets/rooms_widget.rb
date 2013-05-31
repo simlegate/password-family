@@ -17,7 +17,8 @@ class RoomsWidget < Apotomo::Widget
     if @room.save
       update :state => :display
     else
-      update "#room_validate_#{evt[:id]}",:text => @room.errors.first[1]
+      # update "#room_validate_#{evt[:id]}",:text => @room.errors.first[1]
+      update ".message", :view => 'error_message', locals: {:message => @room.errors.first[1]}
     end
  end
 
@@ -31,7 +32,8 @@ class RoomsWidget < Apotomo::Widget
     if @room.update_attributes(evt[:room])
       update :state => :display
     else
-      update "#room_validate_#{@room.id}",:text => @room.errors.first[1]
+      # update "#room_validate_#{@room.id}",:text => @room.errors.first[1]
+      update ".message", :view => 'error_message', locals: {:message => @room.errors.first[1]}
     end
  end
 
