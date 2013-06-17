@@ -9,9 +9,9 @@ gem "bson_ext"
 gem 'jquery-rails',"2.1.4"
 gem 'slim-rails',"1.1.0"
 gem "settingslogic"
-gem 'simple_form'
+gem 'simple_form', :git => 'git://github.com/plataformatec/simple_form.git'
 gem 'cells'
-gem 'apotomo'
+gem "apotomo", :git => 'git@github.com:simlegate/apotomo.git'
 gem 'devise'
 gem 'devise-encryptable'
 
@@ -39,8 +39,8 @@ end
 
 
 gem "coffee-rails", "~> 4.0.0"
-gem "less-rails" 
+gem "less-rails"
+gem 'less-rails-fontawesome'
 gem 'therubyracer'
 gem 'uglifier', '>= 1.0.3'
 gem "twitter-bootstrap-rails"
-

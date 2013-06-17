@@ -13,5 +13,5 @@ PasswordFamily::Application.routes.draw do
 
 
   resources :members,:rooms
-  match '/:anything', to: "application_with_exceptions#routing_error", as: :error, :constraints => {:anything => /.*/}
+  match '/:anything', to: "application_with_exceptions#routing_error", as: :error, :constraints => {:anything => /.*/} ,:via => [:get , :post]
 end
