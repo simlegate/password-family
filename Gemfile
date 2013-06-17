@@ -1,12 +1,13 @@
-source 'http://ruby.taobao.org'
+source 'http://rubygems.org'
 
-ruby '1.9.3'
-gem 'rails', '3.2.13'
-gem "mongoid"
+ruby '2.0.0'
+gem 'rails', '>= 4.0.0.rc1'
+
+gem 'mongoid', github: 'mongoid/mongoid'
+
 gem "bson_ext"
 gem 'jquery-rails',"2.1.4"
 gem 'slim-rails',"1.1.0"
-gem 'rocket_pants', '1.6.1'
 gem "settingslogic"
 gem 'simple_form'
 gem 'cells'
@@ -37,14 +38,9 @@ group :test do
 end
 
 
-#group :assets do
-  gem 'coffee-rails', '~> 3.2.1'
-  gem "less-rails" 
-  gem 'therubyracer'
-  gem 'uglifier', '>= 1.0.3'
-  gem "twitter-bootstrap-rails"
-#end
+gem "coffee-rails", "~> 4.0.0"
+gem "less-rails" 
+gem 'therubyracer'
+gem 'uglifier', '>= 1.0.3'
+gem "twitter-bootstrap-rails"
 
-group :development do
-# gem "debugger"
-end
