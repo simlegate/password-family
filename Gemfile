@@ -40,7 +40,7 @@ end
 
 gem "coffee-rails", "~> 4.0.0"
 gem "less-rails"
-gem 'less-rails-fontawesome'
 gem 'therubyracer'
 gem 'uglifier', '>= 1.0.3'
 gem "twitter-bootstrap-rails"
+gem 'font-awesome-rails'
