@@ -6,8 +6,8 @@ please preview [test version](http://passwordfamily.ginchenorlee.com) and give m
 
 # Requirements
 
-* ruby 1.9.3
-* rails 3.2
+* ruby 2.0.0
+* rails 4.0
 * mongodb & mongoid 
 
 # install
